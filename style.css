@@ -501,6 +501,18 @@ p {
   margin-top: auto;
 }
 
+.project-meta {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project-body h3 {
+  margin-top: -0.5rem;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
