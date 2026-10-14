@@ -249,6 +249,17 @@ section {
   background: none;
 }
 
+a.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+a.btn:hover {
+  text-decoration: none;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -334,6 +345,21 @@ article .icon {
 
 #projects {
   position: relative;
+  height: fit-content;
+  padding-bottom: 4rem;
+}
+
+#projects .about-containers {
+  flex-wrap: wrap;
+}
+
+#projects .details-container {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 18rem;
+}
+
+.project-desc {
+  margin: 0 1rem 1.5rem;
 }
 
 .color-container {
