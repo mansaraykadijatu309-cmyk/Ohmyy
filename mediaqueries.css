@@ -1,103 +1,107 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
+@media screen and (max-width: 900px) {
+  .menu-toggle {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
+
+  .nav-links {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 1.25rem 1rem;
+    background: var(--cream);
+    border-bottom: 1px solid var(--hair);
   }
-  section,
-  .section-container {
-    height: fit-content;
+
+  .nav-links.open {
+    display: flex;
   }
-  section {
-    margin: 0 5%;
+
+  .nav-link {
+    display: inline-block;
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
   }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    min-height: 0;
+    padding-block: 2.5rem 4rem;
+    text-align: center;
   }
-  .about-containers {
-    margin-top: 0;
+
+  .hero-photo {
+    order: -1;
+    width: min(78%, 22rem);
+  }
+
+  .hero-pitch {
+    margin-inline: auto;
+  }
+
+  .hero .btn-row,
+  .socials {
+    justify-content: center;
+  }
+
+  .section {
+    padding-block: 4rem;
+  }
+
+  .about-grid,
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    gap: 2.5rem;
+  }
+
+  .about-photo {
+    width: min(100%, 24rem);
+    margin-inline: auto;
+  }
+
+  .band {
+    padding-block: 5rem;
+  }
+
+  .band-bloom {
+    right: -10rem;
+    width: 26rem;
+    height: 26rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+@media screen and (max-width: 560px) {
+  .card-row {
+    grid-template-columns: 1fr;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+
+  .hero-photo {
+    width: min(82%, 20rem);
   }
-  article {
-    font-size: 1rem;
+
+  .hero-photo::after {
+    left: -1.25rem;
+    width: 6rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+
+  .btn-row {
+    gap: 0.75rem;
   }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
+
+  .project-body,
+  .card {
+    padding: 1.35rem;
   }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
+
+  .chip {
+    padding: 0.5rem 0.85rem;
   }
 }
